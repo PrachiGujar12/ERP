@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #df9700;
+    --white-color: #ffffff;
+    --black-color: #000000;
+  }
+
+
+
+  body{font-family: "Poppins", sans-serif;}
+
+/* Mega menu base styling */
+.navbar .megamenu {
+    padding: 1rem;
+    display: none;
+    
+  }
+  .nav-justified .nav-item{
+    font-family: "Poppins", sans-serif;
+    
+  }
+  .nav-justified .nav-item .nav-link{color: var(--black-color); font-weight: 500;}
+  .nav-justified .nav-item .nav-link:hover{color: var(--black-color); font-weight: 600;}
+
+
+  label {
+		margin-right: 0px;
+}
+.radio-button-label > input { 
+	display: none;
+}
+.radio-button-label > img {
+	cursor: pointer;
+	border: 3px solid #ddd;
+	width: 150rem;
+  border-radius: 50px; padding: 4px; object-fit: cover;
+}
+
+
+
+
+.owl-carousel.owl-drag .owl-item .item{padding: unset; border: 0px; width: 55.609px; height: auto;}
+
+.radio-button-label > input:checked + img { 
+	border: 3px solid var(--primary-color);
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{z-index: 1;  color: var(--black-color); }
+.owl-theme .owl-nav [class*=owl-]:hover{background: none !important; color: var(--black-color) !important;}
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {width: unset !important; height: unset !important; font-size: 25px; font-weight: 700;}
+.owl-carousel .owl-stage-outer{z-index: 1;}
+.owl-theme .owl-nav{margin-top: unset !important;}
+.owl-carousel.owl-loaded{position: relative;}
+.owl-theme .owl-nav {position: absolute; top: 15%; display: flex; align-content: center; justify-content: space-between; width: 100%; }
+
+.range-slider { position: relative; width: 100%; height: 10px; background: #ddd; border-radius: 5px; margin-top: 20px; } .slider-track { position: absolute; width: 100%; height: 10px; background: #ddd; border-radius: 5px; } .slider-range { position: absolute; height: 10px; background: var(--primary-color); border-radius: 5px; } 
+input[type="range"] { position: absolute; width: 100%; -webkit-appearance: none; background: none; pointer-events: none; top: -5px;} input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: var(--primary-color); cursor: pointer; pointer-events: all; position: relative; } input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: var(--primary-color); cursor: pointer; pointer-events: all; position: relative; } input[type="range"]::-ms-thumb { width: 20px; height: 20px; border-radius: 50%; background: var(--primary-color); cursor: pointer; pointer-events: all; position: relative; }
+
+
+.RightDivProduct .owl-carousel.owl-drag .owl-item .item{padding: unset; border: 0px; width: 40.609px; height: 40.609px; padding: 3px; border-radius: 50px;}
+.RightDivProduct .owl-carousel .owl-item img{width: 2.5rem;}
+
+.RightDivProduct .ProductCard-Price {font-weight: 500;}
+
+.RightDivProduct .card:hover{border: 1px solid #000000 !important;}
+
+/* Hide radio buttons by default */
+.productListTab .owl-carousel .item input[type="radio"] {
+  display: none;
+}
+
+
+/* Style for active tab in the carousel */
+.productListTab .owl-carousel .item.active {
+  border: 3px solid var(--primary-color) !important; /* Blue border for active tab (you can change the color) */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  padding: 5px; /* Optional: Add padding to make the border more visible */
+}
+
+/* Optional: Add a transition effect */
+.productListTab .owl-carousel .item {
+  transition: border-color 0.3s ease; /* Smooth transition when active */
+}
+
+/* Optional: Hover effect */
+.productListTab .owl-carousel .item:hover {
+  border: 3px solid #28a745; /* Green border on hover (you can change the color) */
+}
+.productListTab .owl-carousel .owl-item img{width: 100%; border-radius: 50px;}
+
+
+
+
+
+
+.single-product .ProductSingleImages { position: relative; width: 100%; height: auto; background-color: var(--white-color); padding: 15px; } .single-product .ProductSingleImages .tiles { position: relative; width: 100%; display: flex; justify-content: center; align-items: center; } .single-product .ProductSingleImages .tile { position: relative; width: 100%; height: 300px; overflow: hidden; } .single-product .ProductSingleImages .photo { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; transition: transform 0.2s ease-out; } .single-product .ProductSingleImages .txt { position: absolute; z-index: 2; bottom: 10%; left: 50%; transform: translateX(-50%); font-family: 'Roboto Slab', serif; font-size: 12px; text-align: center; color: #333; cursor: default; } .single-product .ProductSingleImages .x { font-size: 16px; font-weight: bold; }
+.single-product  .owl-carousel .owl-item img{width: 4rem !important;}
+
+
+
+:root{ --bs-white: #fff; --bs-gray: #6c757d; --bs-hover:#192a56; --bs-primary:#565c64; } .product-grid{ background-color: #fff; font-family: 'Montserrat', sans-serif; text-align: center; } .product-grid .product-image{ overflow: hidden; position: relative; } .product-grid .product-image a.image{ display: block; } .product-grid .product-image img{ width: 100%; height: auto; } .product-grid .product-image .pic-1{ transition: all 0.3s ease 0s; } .product-grid .product-image:hover .pic-1{ transform: translateX(100%); } .product-grid .product-image .pic-2{ width: 100%; height: 100%; transform: translateX(-101%); position: absolute; top: 0; left: 0; transition: all 0.3s ease 0s; } .product-grid .product-image:hover .pic-2{ transform: translateX(0); } .product-grid .product-sale-label{ color: #fff; background: var(--bs-hover); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 2px 8px; position: absolute; top: 15px; left: 15px; } .product-grid .product-like-icon{ color: #696969; font-size: 22px; line-height: 20px; position: absolute; top: 15px; right: 15px; } .product-grid .product-like-icon:hover{ color: var(--bs-hover); } .product-grid .product-like-icon:before, .product-grid .product-like-icon:after{ content: attr(data-tip); color: #fff; background-color: #000; font-size: 12px; line-height: 18px; padding: 7px 7px 5px; visibility: hidden; position: absolute; right: 0; top: 15px; transition: all 0.3s ease 0s; } .product-grid .product-like-icon:after{ content: ''; height: 15px; width: 15px; padding: 0; transform: translateX(-50%) rotate(45deg); right: auto; left: 50%; top: 15px; z-index: -1; } .product-grid .product-like-icon:hover:before, .product-grid .product-like-icon:hover:after{ visibility: visible; top: 30px; } .product-grid .product-links{ width: 170px; padding: 0; margin: 0; list-style: none; opacity: 0; transform: translateX(-50%); position: absolute; bottom: -50px; left: 50%; transition: all 0.3s ease 0s; } .product-grid:hover .product-links{ bottom: 40px; opacity: 1; } .product-grid .product-links li{ display: inline-block; margin: 0 2px; } .product-grid .product-links li a{ color: #fff; background: #192a56; font-size: 16px; line-height: 48px; width: 48px; height: 48px; border-radius: 50%; display: block; transition: all 0.3s ease 0s; } .product-grid:hover .product-links li a:hover{ background: #333; } .product-grid .product-content{ text-align: left; padding: 15px 0 0; } .product-grid .title{ font-size: 14px; font-weight: 500; text-transform: capitalize; margin: 0 0 8px; } .product-grid .title a{ color: #333; transition: all 0.3s ease 0s; text-decoration:none; font-weight:600; font-size:18px; } .product-grid .title a:hover{ color: var(--bs-hover); } .product-grid .price{ color: var(--bs-hover); font-size: 16px; font-weight: 500; } .product-grid .price span{ color: #555; font-size: 14px; font-weight: 400; text-decoration: line-through; margin: 0 5px 0 0; } 
+@media screen and (max-width: 990px){ .product-grid{ margin: 0 0 30px; } }
+
+.slider-labels { margin-top: 10px; } /* Functional styling; * These styles are required for noUiSlider to function. * You don't need to change these rules to apply your design. */ 
+
+.single-product .form-check-box { display: inline-block; margin: 10px; position: relative; } 
+.single-product .form-check-box input[type="radio"] { display: none; /* Hide the default radio button */ } 
+.single-product .form-check-box label { display: inline-block; padding: 10px 20px; border: 2px solid #ccc; border-radius: 5px; font-size: 14px; cursor: pointer; transition: all 0.3s ease; text-align: center; min-width: 100px; background-color: #f9f9f9; } /* Highlight selected box */ 
+.single-product .form-check-box input[type="radio"]:checked + label { background-color: var(--primary-color); color: white; border-color: var(--primary-color); } /* Hover effect */ 
+.single-product .form-check-box label:hover { background-color: #e0e0e0; border-color: #aaa; }
+
+
+
+
+  
+  /* ============ desktop view ============ */
+  @media all and (min-width: 992px) {
+    .navbar .has-megamenu {
+      position: static !important;
+      
+    }
+  
+    /* Show megamenu on hover */
+    .navbar .has-megamenu:hover .megamenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin-top: 0;
+      background: var(--white-color);
+      z-index: 1000;
+    }
+  }
+  
+  /* ============ mobile view ============ */
+  @media (max-width: 991px) {
+    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse {
+      overflow-y: auto;
+      max-height: 90vh;
+      margin-top: 10px;
+    }
+  }
+  
